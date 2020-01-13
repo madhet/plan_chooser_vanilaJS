@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+body {
+  margin: 0;
+  overflow: hidden;
+}
+body #root .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #root .row .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #root .row .container ul {
+  padding: 0;
+  margin: 0;
+  max-width: 290px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.33;
+  color: #616f70;
+  background-color: #fff;
+  box-shadow: 0px 1px 1px 0 rgba(0,0,0,0.09);
+}
+body #root .row .container ul li {
+  padding: 0 5px;
+  box-sizing: border-box;
+  margin: 0 40px;
+}
+body #root .row .container ul .planName {
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 48px 5px 16px 5px;
+}
+body #root .row .container ul .liPlanPrice {
+  margin-bottom: 27px;
+}
+body #root .row .container ul .liPlanPrice .planPrice {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 0.73;
+}
+body #root .row .container ul .liPlanDuration {
+  margin-top: 38px;
+}
+body #root .row .container ul .liPlanDuration .planDuration {
+  font-size: 40px;
+  font-weight: 700;
+  color: #6bc77e;
+}
+body #root .row .container ul .mo {
+  font-size: 16px;
+  color: #a0a2a2;
+}
+body #root .row .container ul .text1 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 2;
+  text-transform: uppercase;
+  color: #a0a2a2;
+}
+body #root .row .container ul .text2 {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #bcbcbc;
+}
+body #root .row .container ul .planInterest {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 2;
+  color: #a0a2a2;
+  margin-top: 45px;
+  text-transform: uppercase;
+}
+body #root .row .container ul .liLoans {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #a0a2a2;
+  margin-bottom: 20px;
+}
+body #root .row .container ul .liImg {
+  margin-top: 17px;
+  margin-bottom: 10px;
+  width: 32px;
+  height: 32px;
+  background-image: url("./img/tick_common.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body #root .row .container ul .liLine {
+  padding: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #ecedec;
+}
+body #root .row .container ul button {
+  outline: none;
+  border: none;
+  background-color: #65c178;
+  padding: 13px 35px;
+  border-radius: 4.2px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.86;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 17px 0;
+}
+body #root .row .container ul:hover {
+  cursor: pointer;
+}
+body #root .row .container ul.planChoosen {
+  max-width: 350px;
+  background-color: #65c178;
+  color: #fff;
+  z-index: 2;
+}
+body #root .row .container ul.planChoosen li {
+  margin: 0 60px;
+}
+body #root .row .container ul.planChoosen .planName {
+  font-size: 26px;
+  line-height: 1.23;
+  text-transform: uppercase;
+}
+body #root .row .container ul.planChoosen .liPlanPrice {
+  margin-bottom: 33px;
+}
+body #root .row .container ul.planChoosen .liPlanPrice .planPrice {
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 0.7;
+}
+body #root .row .container ul.planChoosen .liPlanDuration {
+  margin-top: 45px;
+}
+body #root .row .container ul.planChoosen .liPlanDuration .planDuration {
+  color: #fff;
+}
+body #root .row .container ul.planChoosen .mo {
+  font-size: 16px;
+  color: #c4edcd;
+}
+body #root .row .container ul.planChoosen .text1 {
+  color: #fff;
+}
+body #root .row .container ul.planChoosen .text2 {
+  color: #c4edcd;
+}
+body #root .row .container ul.planChoosen .planInterest {
+  color: #fff;
+  margin-top: 53px;
+}
+body #root .row .container ul.planChoosen .liImg {
+  margin: 23px 0;
+  background-image: url("./img/tick_choosen.svg");
+}
+body #root .row .container ul.planChoosen .liLoans {
+  color: #fff;
+  margin-bottom: 0;
+}
+body #root .row .container ul.planChoosen .liLine {
+  background-color: #69c57c;
+}
+body #root .row .container ul.planChoosen .liLine:nth-last-child(2) {
+  display: none;
+}
+body #root .row .container ul.planChoosen button {
+  background-color: #fff;
+  color: #979797;
+  margin-top: 48px;
+  margin-bottom: 44px;
+}
+@media all and (max-width: 850px) {
+  body #root .row .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "plan_chooser_vanilaJs",
+  "version": "1.0.0",
+  "description": "plan_chooser_vanilaJs",
+  "main": "script.js",
+  "scripts": {
+    "stylus": "stylus -w ./style/main.styl -o ./style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
